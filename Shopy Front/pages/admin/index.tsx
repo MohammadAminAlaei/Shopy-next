@@ -11,7 +11,7 @@ const adminPanel: NextPageWithLayout = () => {
 
     return (
         <div>
-            <h1> YOUR DASHBOARDDDDDDDD </h1>
+            <h1> YOUR DASHBOyyyyyyARDDDDDDDD </h1>
         </div>
     )
 };

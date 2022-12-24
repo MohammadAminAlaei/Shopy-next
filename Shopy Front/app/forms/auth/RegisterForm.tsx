@@ -36,6 +36,6 @@ const RegisterForm = withFormik<RegisterFormProps, RegisterFormValuesInterFace>(
         }
 
     }
-})(InnerRegisterForm)
+})(InnerRegisterForm);
 
 export default RegisterForm;

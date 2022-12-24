@@ -12,8 +12,6 @@ const UserPanelLayout = ({ children }: Props) => {
 
     const { user, error, loading } = useAuth();
 
-    console.log(user)
-
     if (error) {
         router.push('/auth/login')
         return <></>

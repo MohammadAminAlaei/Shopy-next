@@ -5,7 +5,7 @@ import InnerLoginForm from "../../components/auth/InnerLoginForm";
 import callApi from "../../helpers/callApi";
 import ValidationError from "../../exceptions/validationError";
 import Router from "next/router";
-import { StringLocale } from "yup/lib/locale";
+
 
 const phoneRegExp = /^(0|0098|\+98)9(0[1-5]|[1 3]\d|2[0-2]|98)\d{7}$/;
 const lognFormValidationSchema = yup.object().shape({

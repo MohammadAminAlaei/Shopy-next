@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import UserInfo from "../../app/components/panel/UserInfo";
 import UserPanelLayout from "../../app/components/userPanelLayout";
 import { NextPageWithLayout } from "../_app";
 
@@ -16,7 +17,7 @@ const Panel: NextPageWithLayout = () => {
 
     return (
         <div>
-            <h1> YOUR DASHBOARDDDDDDDD </h1>
+            <UserInfo />
         </div>
     )
 };

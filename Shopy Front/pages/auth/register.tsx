@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 import RegisterForm from '../../app/forms/auth/RegisterForm';
+import { NextPageWithLayout } from '../_app';
+import GuestPanelLayout from '../../app/components/guestLayout';
 
-const Register: NextPage = () => {
+const Register: NextPageWithLayout = () => {
 
 
     return (
@@ -24,6 +26,9 @@ const Register: NextPage = () => {
             </div>
         </>
     )
-}
+};
+
+Register.getLayout = page => <GuestPanelLayout>{page}</GuestPanelLayout>
+
 
 export default Register

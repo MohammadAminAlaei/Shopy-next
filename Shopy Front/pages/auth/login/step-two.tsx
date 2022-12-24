@@ -6,7 +6,7 @@ import { selectPhoneVerifyToken, updatePhoneVerifyToken } from '../../../app/sto
 import Router from 'next/router';
 import { useEffect } from 'react';
 import { NextPageWithLayout } from '../../_app';
-import GuestPanelLayout from '../../../app/components/guestPanelLayout';
+import GuestPanelLayout from '../../../app/components/guestLayout';
 
 
 const PhoneVerify: NextPageWithLayout = () => {

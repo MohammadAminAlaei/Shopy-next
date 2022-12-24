@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import GuestPanelLayout from '../../../app/components/guestPanelLayout';
+import GuestPanelLayout from '../../../app/components/guestLayout';
 import LoginForm from '../../../app/forms/auth/LoginForm';
 import { useAppDispatch } from '../../../app/hooks';
 import { updatePhoneVerifyToken } from '../../../app/store/auth';

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import useAuth from '../hooks/useAuth';
-import Router from 'next/router';
+import { useRouter } from 'next/router';
 
 interface Props {
     children: ReactNode
@@ -8,10 +8,12 @@ interface Props {
 
 const GuestPanelLayout = ({ children }: Props) => {
 
-    const { user, error, loading } = useAuth();
+    const router = useRouter();
+
+    const { user, error } = useAuth();
 
     if (user) {
-        Router.push('/panel')
+        router.push('/panel')
         return <></>
     }
 

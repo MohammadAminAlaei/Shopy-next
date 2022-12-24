@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from 'react';
 import useAuth from '../hooks/useAuth';
 import { useRouter } from 'next/router';
 
@@ -15,10 +15,11 @@ const AdminPanelLayout = ({ children }: Props) => {
         return <></>
     }
 
-    if (!user?.is_admin) {
-        router.push('/');
-        return <></>
-    }
+    useEffect(() => {
+        if (!user?.is_admin) {
+            router.push('/');
+        }
+    }, [user]);
 
     return (
         <div className='w-full text-2xl'>
