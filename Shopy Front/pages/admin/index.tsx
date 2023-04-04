@@ -6,12 +6,11 @@ const adminPanel: NextPageWithLayout = () => {
 
     const [loading, setLoading] = useState<boolean>(true);
 
-
-    if (loading) return <div> Loading... </div>
+    // if (loading) return <div> Loading... </div>
 
     return (
         <div>
-            <h1> YOUR DASHBOyyyyyyARDDDDDDDD </h1>
+            <h1> YOUR Dock </h1>
         </div>
     )
 };

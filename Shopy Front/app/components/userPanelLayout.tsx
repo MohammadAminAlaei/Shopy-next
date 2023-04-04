@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import { ReactNode } from "react"
 import useAuth from "../hooks/useAuth";
 
-
 interface Props {
     children: ReactNode
 }

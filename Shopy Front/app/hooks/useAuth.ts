@@ -5,14 +5,9 @@ import { useAppDispatch } from './index';
 import { updateUser } from '../store/auth';
 
 const useAuth = () => {
-    const cookie = new Cookies();
     const dispatch = useAppDispatch();
     const { data, error } = useSWR('my_user', () => {
-        return callApi().get('/user', {
-            headers: {
-                authorization: cookie.get('shopy_token')
-            }
-        })
+        return callApi().get('/user');
     });
 
     dispatch(updateUser(data?.data?.user));
